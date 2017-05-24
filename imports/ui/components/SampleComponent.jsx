@@ -15,8 +15,8 @@ export default class SampleComponent extends Component{
 
   render(){
     return(
-      <div>
-        You have clicked {this.state.counter} times!
+      <div className='contentContainer'>
+        <h3> Hello! This is your component! </h3>
       </div>
     )
   }

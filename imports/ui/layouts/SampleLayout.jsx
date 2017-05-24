@@ -17,18 +17,19 @@ export default class SampleLayout  extends Component{
 
       return(
           <div className="ui grid">
-              <div className='row firstRow'>
-                  <TopBarTitle/>
-                  <Topbar/>
-                  <TopBarOption/>
+            <div className='row firstRow'>
+              <TopBarTitle/>
+              <Topbar/>
+              <TopBarOption/>
+            </div>
+            <div className='row secondRow'>
+              <Sidebar/>
+              <div className='three wide column'></div>
+              <div className='thirteen wide column mainBody'>
+                {this.props.content}
               </div>
-              <div className='row secondRow'>
-                  <Sidebar/>
-                  <div className='three wide column'></div>
-                  <div className='thirteen wide column' style={{background: '#F7F7F7'}}>
-                    {this.props.content}
-                  </div>
-              </div>
+
+            </div>
           </div>
       );
   }
