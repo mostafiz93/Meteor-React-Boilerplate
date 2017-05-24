@@ -4,7 +4,7 @@ export default class TopBarOption extends React.Component{
   render(){
     return(
       <div className='three wide column topBar'>
-          Options here
+          <h3>Sample Options</h3>
       </div>
     )
   }
