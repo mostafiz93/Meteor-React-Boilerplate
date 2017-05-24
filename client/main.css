@@ -1,1 +1,105 @@
-/* CSS declarations go here */
+/**************************************** Reset & Default Setting **************************************/
+
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+ol, ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.clr{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+html{
+	height: inherit;
+}
+body{
+	background: #f8f8f8;
+	font-size: 14px;
+	color: #2c3d48;
+	font-weight: lighter;
+}
+.mainBody{
+	margin-top: 64px !important;
+}
+.contentContainer{
+	padding: 14px 14px 14px 10px;
+}
+
+
+/**************************************** Top Bar Starts **************************************/
+
+.firstRow{
+    padding-bottom: 0px !important;
+	position: fixed !important;
+	z-index: 99;
+	left: 0px;
+}
+.secondRow{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.topBarTitle{
+	background: #3e40a1;
+    color: #fff;
+}
+.topBarTitle h3{
+	text-align: center;
+	line-height: 50px;
+	font-weight: normal;
+}
+.topBar{
+	background: #3e40a1;
+	text-align: center;
+}
+.topBar h3{
+	color: #fff;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+/**************************************** Side Bar Starts **************************************/
+
+.sideBar{
+  height: calc(100vh - 50px);
+  background: #5153aa;
+  position: fixed !important;
+  z-index: 9;
+  margin: 64px 0px 0px 5px !important;
+  overflow-y: auto;
+}
+.sideBarMenu{
+	margin: 10px -14px 20px -5px;
+}
+.sideBarMenu li a{
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	padding: 8px 10px 8px 15px;
+	color: #fff;
+}
+.sideBarMenu > li > a:hover,
+.sideBarMenu > li > ul > li > a:hover{
+	background: rgba(0,0,0,0.2);
+}
+.sideBarMenu li ul{
+	display: none;
+}
+.sideBarMenu li ul.activeItem{
+	display: block;
+}
+.sideBarMenu li ul li a{
+	padding-left: 30px;
+}
+.activeMenu{
+	background: rgba(0,0,0,0.3);
+	border-right: 3px solid #ed4054;
+	font-weight: normal;
+}

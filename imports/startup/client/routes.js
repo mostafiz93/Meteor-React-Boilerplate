@@ -1,16 +1,13 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
-import { BlazeLayout } from 'meteor/kadira:blaze-layout';
-import { AccountsTemplates } from 'meteor/useraccounts:core';
 import { mount } from 'react-mounter';
 
-
-//main.js specific files
-//import { Template } from 'meteor/templating';
-// import { ReactiveVar } from 'meteor/reactive-var';
+import SamplePage from '/imports/ui/pages/samplePage.jsx'
 
 FlowRouter.route('/', {
-  name: 'Home',
+  name: 'SamplePage',
   action(params, queryParams) {
-      Meteor.userId() ? mount(Dashboard) : mount(Login);
+      console.log("home route is being called...");
+      // Meteor.userId() ? mount(Dashboard) : mount(Login);
+      mount(SamplePage);
   }
 });
