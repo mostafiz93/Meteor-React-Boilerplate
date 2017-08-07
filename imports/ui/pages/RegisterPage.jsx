@@ -30,14 +30,10 @@ export default class RegisterPage extends Component{
       window.alert("Please fill up all fields");
       return;
     }
-    if(data.code != 'army101'){
-      alert("Code is wrong!");
-      return;
-    }
     Meteor.call("user.create", data, function(error, result){
       if(error){
         console.log("error", error);
-        window.alert('Error! Please contact admin.')
+        window.alert(error.message)
       }
       if(result){
          console.log(result);

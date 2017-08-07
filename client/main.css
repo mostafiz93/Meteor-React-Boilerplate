@@ -47,7 +47,7 @@ body{
     padding-bottom: 0px !important;
 }
 .topBarTitle{
-	background: #3e40a1;
+	background: #00300d;
     color: #fff;
 }
 .topBarTitle h3{
@@ -56,7 +56,7 @@ body{
 	font-weight: normal;
 }
 .topBar{
-	background: #3e40a1;
+	background: #00300d;
 	text-align: center;
 }
 .topBar h3{
@@ -69,7 +69,7 @@ body{
 
 .sideBar{
   height: calc(100vh - 50px);
-  background: #5153aa;
+  background: #004212;
   position: fixed !important;
   z-index: 9;
   margin: 64px 0px 0px 5px !important;
@@ -100,7 +100,7 @@ body{
 }
 .activeMenu{
 	background: rgba(0,0,0,0.3);
-	border-right: 3px solid #ed4054;
+	border-right: 3px solid #004212;
 	font-weight: normal;
 }
 
