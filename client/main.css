@@ -103,3 +103,53 @@ body{
 	border-right: 3px solid #ed4054;
 	font-weight: normal;
 }
+
+
+/**************************************** Login Page Starts **************************************/
+
+.loginSectionCon{
+	background: rgba(255,255,255,0.4);
+    margin: 3% auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.loginLogo{
+    height: auto;
+    max-width: 123px;
+    margin: 0px auto 20px;
+    padding-top: 20px;
+}
+.loginSectionCon h2{
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 20px 0px;
+	display: block;
+	text-align: center;
+	color: #212121;
+}
+.logFieldContainer{
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.logFieldContainer p{
+	margin: 0px;
+}
+.logFieldContainer .loginField{
+	padding: 9px 10px;
+	border: 1px solid #E9ECD2;
+	border-radius: 5px;
+	background: #FEFFEF;
+	width: 100%;
+	margin: 5px 0px 15px;
+}
+.regCheckbox{
+	margin-right: 20px;
+}
+.regCheckboxTitle{
+	margin-right: 20px;
+	padding-bottom: 10px;
+	display: inline-block;
+}

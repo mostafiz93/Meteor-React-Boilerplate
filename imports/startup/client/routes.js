@@ -1,13 +1,33 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { mount } from 'react-mounter';
 
-import SamplePage from '/imports/ui/pages/samplePage.jsx'
+import HomePage from '/imports/ui/pages/HomePage.jsx'
+import RegisterPage from '/imports/ui/pages/RegisterPage'
+import LoginPage from '/imports/ui/pages/LoginPage'
+
 
 FlowRouter.route('/', {
-  name: 'SamplePage',
+  name: 'Homepage' ,
+  action(params, queryParams) {
+      console.log("home route is being called...");
+      Meteor.userId() ? mount(HomePage) : mount(LoginPage);
+  }
+});
+
+FlowRouter.route('/register', {
+  name: 'RegisterPage',
   action(params, queryParams) {
       console.log("home route is being called...");
       // Meteor.userId() ? mount(Dashboard) : mount(Login);
-      mount(SamplePage);
+      mount(RegisterPage);
+  }
+});
+
+FlowRouter.route('/login', {
+  name: 'LoginPage',
+  action(params, queryParams) {
+      console.log("home route is being called...");
+      // Meteor.userId() ? mount(Dashboard) : mount(Login);
+      mount(LoginPage);
   }
 });

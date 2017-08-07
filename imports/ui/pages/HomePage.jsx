@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import SampleLayout from '/imports/ui/layouts/SampleLayout.jsx';
 import SampleComponent from '/imports/ui/components/SampleComponent.jsx';
 
-export default class SamplePage extends Component{
+export default class HomePage extends Component{
 
   render(){
     console.log("SamplePage being rendered");
