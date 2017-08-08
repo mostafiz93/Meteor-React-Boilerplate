@@ -153,3 +153,15 @@ body{
 	padding-bottom: 10px;
 	display: inline-block;
 }
+
+
+
+/************************************   others  *************************************/
+.dropdownContent{
+  margin-bottom: 15px;
+}
+
+.actionButtonContainer .button{
+	margin: 20px auto 0;
+	display: block;
+}
