@@ -165,3 +165,134 @@ body{
 	margin: 20px auto 0;
 	display: block;
 }
+
+
+
+/************************************  HOME CARD  ************************************/
+
+.complainContainer{
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #9FA4A8;
+    padding: 20px;
+    position: relative;
+		cursor: pointer;
+}
+.complainContainer03{
+    width: 90%;
+    margin: 0px auto;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+}
+.complainContainer03:first-child{
+  margin-top: 20px;
+}
+.complainContainer03:last-child{
+  margin-bottom: 20px;
+}
+.complainContainer02{
+	  width: 90%;
+    margin: 20px auto 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 20px;
+    position: relative;
+}
+.complainContainer > img,
+.complainContainer02 > img{
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 50%;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+.complainContainer > h3{
+    margin: 0px 0px 10px;
+}
+.complainContainer02 > h3{
+    margin: 0px;
+}
+.rightFloatedIcon{
+	float: right;
+  margin-left: 20px;
+}
+.complainItems{
+  float: left;
+}
+.complainItems span,
+.complainItems a{
+    margin-right: 10px;
+    color: #365C7A;
+    cursor: pointer;
+}
+.endTimeIndicator{
+  color: #FF4081;
+  float: right;
+}
+.votingOptions{
+  padding-left: 50px;
+}
+.votingOptions li{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+.votingOptions li:last-child{
+  border: 0;
+}
+.votingOptions li:last-child a{
+  color: #333;
+  margin-left: 30px;
+}
+.votingOptions li:last-child a:hover{
+  text-decoration: underline;
+}
+.perticipatorOptions{
+  padding-left: 50px;
+  color: #FF9800;
+  list-style-type: disc;
+}
+.perticipatorOptions li span{
+  color: #333;
+}
+.threadRemoveIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.complainAddBtn{
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+    z-index: 999;
+}
+.complainInputContainer{
+    width: 60%;
+    margin: 0px auto;
+}
+.complainInput{
+    width: 100%;
+    padding: 7px 10px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+    resize: none;
+    transition: all  0.3s;
+}
+.complainInput:focus{
+    border-bottom: 2px solid #026DB5;
+}
+.complainInputContainer li i{
+    color: rgba(0,0,0,.87);
+    margin-right: 15px;
+}
+.modalHeader{
+    background: #F7F7F7 !important;
+    text-align: center;
+}

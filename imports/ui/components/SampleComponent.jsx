@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import { mount } from 'react-mounter';
+
+import HomeCardPage from '/imports/ui/pages/HomeCardPage.jsx';
 
 export default class SampleComponent extends Component{
   constructor(props){
     super(props);
+
+    this.state = {
+      radio_net: -1,
+      cmd_net: -1,
+    }
   }
 
   componentDidMount(){
@@ -11,7 +19,7 @@ export default class SampleComponent extends Component{
 
   handleChange(name, e) {
     let val = parseInt(e.target.value);
-    if(val.isNan() || val == -1) return;
+    if(val == -1) return;
 
     let change = {}
     change[name] = val
@@ -19,7 +27,15 @@ export default class SampleComponent extends Component{
   }
 
   handleSubmit(){
-
+    let x = {
+      radio_net: this.state.radio_net,
+      cmd_net: this.state.cmd_net,
+    }
+    if(x.radio_net == -1 || x.cmd_net == -1){
+      alert('Please select values from both dropdowns')
+      return;
+    }
+    mount(HomeCardPage, x)
   }
 
   render(){
@@ -41,7 +57,7 @@ export default class SampleComponent extends Component{
               <option value="2">Admin Net</option>
             </select>
             <div className='actionButtonContainer'>
-              <button className='ui blue icon labeled button'>
+              <button className='ui blue icon labeled button' onClick={this.handleSubmit.bind(this)}>
                 <i className='send icon'></i>
                 Submit
               </button>
