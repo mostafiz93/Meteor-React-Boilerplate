@@ -47,7 +47,7 @@ body{
     padding-bottom: 0px !important;
 }
 .topBarTitle{
-	background: #3e40a1;
+	background: #00300d;
     color: #fff;
 }
 .topBarTitle h3{
@@ -56,7 +56,7 @@ body{
 	font-weight: normal;
 }
 .topBar{
-	background: #3e40a1;
+	background: #00300d;
 	text-align: center;
 }
 .topBar h3{
@@ -69,7 +69,7 @@ body{
 
 .sideBar{
   height: calc(100vh - 50px);
-  background: #5153aa;
+  background: #004212;
   position: fixed !important;
   z-index: 9;
   margin: 64px 0px 0px 5px !important;
@@ -100,6 +100,199 @@ body{
 }
 .activeMenu{
 	background: rgba(0,0,0,0.3);
-	border-right: 3px solid #ed4054;
+	border-right: 3px solid #004212;
 	font-weight: normal;
+}
+
+
+/**************************************** Login Page Starts **************************************/
+
+.loginSectionCon{
+	background: rgba(255,255,255,0.4);
+    margin: 3% auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.loginLogo{
+    height: auto;
+    max-width: 123px;
+    margin: 0px auto 20px;
+    padding-top: 20px;
+}
+.loginSectionCon h2{
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 20px 0px;
+	display: block;
+	text-align: center;
+	color: #212121;
+}
+.logFieldContainer{
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.logFieldContainer p{
+	margin: 0px;
+}
+.logFieldContainer .loginField{
+	padding: 9px 10px;
+	border: 1px solid #E9ECD2;
+	border-radius: 5px;
+	background: #FEFFEF;
+	width: 100%;
+	margin: 5px 0px 15px;
+}
+.regCheckbox{
+	margin-right: 20px;
+}
+.regCheckboxTitle{
+	margin-right: 20px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+
+
+/************************************   others  *************************************/
+.dropdownContent{
+  margin-bottom: 15px;
+}
+
+.actionButtonContainer .button{
+	margin: 20px auto 0;
+	display: block;
+}
+
+
+
+/************************************  HOME CARD  ************************************/
+
+.complainContainer{
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #9FA4A8;
+    padding: 20px;
+    position: relative;
+		cursor: pointer;
+}
+.complainContainer03{
+    width: 90%;
+    margin: 0px auto;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+}
+.complainContainer03:first-child{
+  margin-top: 20px;
+}
+.complainContainer03:last-child{
+  margin-bottom: 20px;
+}
+.complainContainer02{
+	  width: 90%;
+    margin: 20px auto 20px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 20px;
+    position: relative;
+}
+.complainContainer > img,
+.complainContainer02 > img{
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 50%;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+.complainContainer > h3{
+    margin: 0px 0px 10px;
+}
+.complainContainer02 > h3{
+    margin: 0px;
+}
+.rightFloatedIcon{
+	float: right;
+  margin-left: 20px;
+}
+.complainItems{
+  float: left;
+}
+.complainItems span,
+.complainItems a{
+    margin-right: 10px;
+    color: #365C7A;
+    cursor: pointer;
+}
+.endTimeIndicator{
+  color: #FF4081;
+  float: right;
+}
+.votingOptions{
+  padding-left: 50px;
+}
+.votingOptions li{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+.votingOptions li:last-child{
+  border: 0;
+}
+.votingOptions li:last-child a{
+  color: #333;
+  margin-left: 30px;
+}
+.votingOptions li:last-child a:hover{
+  text-decoration: underline;
+}
+.perticipatorOptions{
+  padding-left: 50px;
+  color: #FF9800;
+  list-style-type: disc;
+}
+.perticipatorOptions li span{
+  color: #333;
+}
+.threadRemoveIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.complainAddBtn{
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+    z-index: 999;
+}
+.complainInputContainer{
+    width: 60%;
+    margin: 0px auto;
+}
+.complainInput{
+    width: 100%;
+    padding: 7px 10px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+    resize: none;
+    transition: all  0.3s;
+}
+.complainInput:focus{
+    border-bottom: 2px solid #026DB5;
+}
+.complainInputContainer li i{
+    color: rgba(0,0,0,.87);
+    margin-right: 15px;
+}
+.modalHeader{
+    background: #F7F7F7 !important;
+    text-align: center;
 }
