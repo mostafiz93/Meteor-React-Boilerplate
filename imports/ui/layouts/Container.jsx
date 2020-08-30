@@ -26,11 +26,10 @@ export default class Container extends React.Component {
 	componentDidMount() {
 		Tracker.autorun(() => {
 			let user = Meteor.user();
-			if (user) {
+			if (user)
 				this.setState({
 					user: user
 				});
-			}
 		});
 	}
 
