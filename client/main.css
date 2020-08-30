@@ -73,16 +73,15 @@ body {
 /**************************************** Side Bar Starts **************************************/
 
 .sideBar {
-	height: calc(100vh - 50px);
+	/* height: calc(100vh - 50px); */
+	height: 100vh;
+	top: 50px;
 	background: #004212;
 	position: fixed !important;
 	z-index: 9;
-	/* margin: 64px 0px 0px 5px !important; */
 	overflow-y: auto;
 }
-.sideBarMenu {
-	/* margin: 10px -14px 20px -5px; */
-}
+
 .sideBarMenu li a {
 	cursor: pointer;
 	display: block;
@@ -156,24 +155,4 @@ body {
 	margin-right: 20px;
 	padding-bottom: 10px;
 	display: inline-block;
-}
-
-/********************************
-        Home Page
-********************************/
-
-.mainBody {
-	margin-top: 80px;
-	margin-left: 68.31px;
-	padding: 14px;
-
-	transition: margin-left ease-in-out 0.3s;
-}
-
-.mainBody.mainBodyLeftMargin {
-	margin-left: 250px;
-}
-
-.mainBody.mainBodyLeftMargin .infoTopBar {
-	left: 250px;
 }

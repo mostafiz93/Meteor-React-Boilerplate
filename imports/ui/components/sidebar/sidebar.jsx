@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Grid } from 'semantic-ui-react';
+const { Row, Column } = Grid;
 
 export default class Sidebar extends React.Component {
 	render() {
 		return (
-			<div className='three wide column sideBar'>
+			<div className='sideBar'>
 				<ul className='sideBarMenu'>
 					<li>
 						<a
