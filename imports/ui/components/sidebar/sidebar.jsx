@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Icon } from 'semantic-ui-react';
 const { Row, Column } = Grid;
 
 export default class Sidebar extends React.Component {
@@ -32,6 +32,19 @@ export default class Sidebar extends React.Component {
 						>
 							<i className='calendar icon' />
 							<span>Sidebar Option C</span>
+						</a>
+					</li>
+					<li
+						onClick={() => {
+							Meteor.logout(err => {
+								if (err) alert('Something went wrong.');
+								location.reload();
+							});
+						}}
+					>
+						<a href='/#'>
+							<Icon name='sign-out' />
+							<span>Log out</span>
 						</a>
 					</li>
 				</ul>

@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { mount } from 'react-mounter';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 export default class LoginPage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
 	componentWillMount() {
 		document.body.style.background = '#004212 ';
 	}
@@ -12,16 +16,20 @@ export default class LoginPage extends Component {
 	}
 
 	handleSubmit() {
+		this.setState({ loginLoading: true });
 		let code = ReactDOM.findDOMNode(this.refs.code).value;
 		let password = ReactDOM.findDOMNode(this.refs.password).value;
-		console.log(code, password);
+		// console.log(code, password);
 		Meteor.loginWithPassword(code, password, error => {
+			console.log(error);
 			if (error) window.alert("School code and password don't match.");
+			// else FlowRouter.go('/');
 			else location.reload();
 		});
 	}
 
 	render() {
+		const { loginLoading } = this.state;
 		return (
 			<div className='loginSectionCon'>
 				<a href='#'>
@@ -46,7 +54,7 @@ export default class LoginPage extends Component {
 					<br />
 					<div className='two ui buttons'>
 						<button
-							className='ui blue button'
+							className={'ui blue button' + (loginLoading ? ' loading' : '')}
 							onClick={this.handleSubmit.bind(this)}
 						>
 							লগইন
